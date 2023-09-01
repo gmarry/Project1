@@ -104,7 +104,6 @@ nav a {
   }
 }
 
-
 .main {
   margin: 40px;
   max-width: 100vw;
@@ -157,4 +156,64 @@ h2 {
     font-size: 1.5em;
     text-align: center; /* Выравнивание по центру на более узких экранах */
   }
+}
+.footer-container{
+  background-color: #212329;
+  
+}
+.footer {
+  width: 80%;
+  height: 40vh;
+  background-color: #212329;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:  0 auto;
+  padding: 50px;
+}
+
+.footer-heading a{
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.logo {
+  width: 145px;
+  height: 94px;
+  margin-right: 80px;
+}
+.face {
+  width: 10px;
+  height: 19px;
+  margin: 15px;
+}  
+.twit {
+  width: 22px;
+  height: 17px;
+  margin: 15px;
+}
+.link {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+}  
+.pint {
+  width: 14px;
+  height: 19px;
+  margin: 15px;
+}  
+.container-img {
+  display: flex;
+}
+span {
+  /* width: 93px;
+  height: 20px; */
+  margin-top: 15px;
+}
+.loca {
+  margin-right: 30px;
 }
