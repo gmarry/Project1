@@ -217,3 +217,151 @@ span {
 .loca {
   margin-right: 30px;
 }
+/* Диана секция контакт начало */
+.contact {
+  max-width: 1100px;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-left: 9%;
+  margin-right: 9%;
+  
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  max-width: 482px;
+  min-height: 85px;
+  font-size: 17px;
+  overflow: hidden;
+  line-height: 1.3;
+  font-family: "Sen", sans-serif;
+}
+
+.contact__group {
+  width: 32%;
+  margin-top: 0;
+}
+.contact__form {
+  box-sizing: border-box;
+  border: transparent;
+  margin-top: 0;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.contact__form input,
+.contact__form textarea {
+  margin-left: 10px;
+  border: none;
+  background: #f3f3f3;
+  height: 45px;
+  width: 100%;
+  color: #8d8d8d;
+}
+
+.contact__tittle {
+  color: #bdbdbd;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+span {
+  content: "*";
+  color: red;
+}
+input {
+  color: #8d8d8d;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+}
+.tel_text {
+  z-index: 100;
+  position: absolute;
+  cursor: text;
+  top: 4px;
+  display: none;
+  color: #8d8d8d;
+  left: 10px;
+}
+.tel_text:focus {
+  z-index: -10;
+}
+.tel {
+  position: relative;
+  overflow: hidden;
+}
+.tel input:invalid + .tel_text {
+  display: inline;
+}
+input text::placeholder {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-style: normal;
+  color: #8d8d8d;
+}
+/* .email_text {
+  z-index: 100;
+  position: absolute;
+  cursor: text;
+  top: 4px;
+
+  color: #8d8d8d;
+  left: 8px;
+}
+
+.email {
+  position: relative;
+  overflow: hidden;
+}
+.email input:invalid + .email_text {
+  display: inline;
+} */
+.contact__img {
+  width: 52%;
+  position: relative;
+}
+
+.contact__img img {
+  width: 100%;
+  margin: 10% 0;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .contact__img {
+    display: none;
+  }
+  input {
+    display: inline-block;
+    min-width: 60vw;
+  }
+  textarea {
+    min-width: 60vw;
+  }
+  h2.contact__tittle {
+    font-size: 1.5rem;
+    display: block;
+    white-space: nowrap;
+    margin-left: 12px;
+  }
+}
+@media screen and (min-width: 769px) {
+  h2.contact__tittle {
+    
+    display: block;
+    white-space: nowrap;
+    margin-left: 12px;
+
+   
+        /* Диана контакт конец */
