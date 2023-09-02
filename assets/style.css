@@ -157,9 +157,8 @@ h2 {
     text-align: center; /* Выравнивание по центру на более узких экранах */
   }
 }
-.footer-container{
+.footer-container {
   background-color: #212329;
-  
 }
 .footer {
   width: 80%;
@@ -169,11 +168,11 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin:  0 auto;
+  margin: 0 auto;
   padding: 50px;
 }
 
-.footer-heading a{
+.footer-heading a {
   display: flex;
   flex-direction: column;
   margin-right: 80px;
@@ -190,7 +189,7 @@ h2 {
   width: 10px;
   height: 19px;
   margin: 15px;
-}  
+}
 .twit {
   width: 22px;
   height: 17px;
@@ -200,12 +199,12 @@ h2 {
   width: 20px;
   height: 20px;
   margin: 15px;
-}  
+}
 .pint {
   width: 14px;
   height: 19px;
   margin: 15px;
-}  
+}
 .container-img {
   display: flex;
 }
@@ -226,7 +225,6 @@ span {
   margin-top: 5%;
   margin-left: 9%;
   margin-right: 9%;
-  
 }
 
 textarea {
@@ -358,10 +356,10 @@ input text::placeholder {
 }
 @media screen and (min-width: 769px) {
   h2.contact__tittle {
-    
     display: block;
     white-space: nowrap;
     margin-left: 12px;
+  }
+}
 
-   
-        /* Диана контакт конец */
+/* Диана контакт конец */
