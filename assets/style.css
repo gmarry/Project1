@@ -157,6 +157,50 @@ h2 {
     text-align: center; /* Выравнивание по центру на более узких экранах */
   }
 }
+
+  .main__section3 {
+  display: grid;
+  grid-template-areas:
+    "main__section3_title main__section3_title main__section3_title main__section3_title"
+    "main__section3_one main__section3_article_one main__section3_two main__section3_article_two"; 
+  grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+  .main__section3_title {
+
+  display: grid;
+  justify-content: start;
+  color: var(--Gray-4, #BDBDBD);
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+}
+  .main__section3_one {
+    color: var(--Gray-6, #F2F2F2);
+    font-family: Roboto;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .main__section3_article_one {
+
+  
+  }
+  .main__section3_two {
+    color: var(--Gray-6, #F2F2F2);
+    font-family: Roboto;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+.main__section3_article_two {
+
+}
+      
 .footer-container {
   background-color: #212329;
 }
