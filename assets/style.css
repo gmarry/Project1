@@ -285,22 +285,33 @@ textarea {
 .contact__form {
   box-sizing: border-box;
   border: transparent;
-  margin-top: 0;
+
   margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   /* border: 1px solid red; */
 }
 
 .contact__form input,
 .contact__form textarea {
   margin-left: 10px;
+  margin-bottom: 2%;
   border: none;
   background: #f3f3f3;
   height: 45px;
   width: 100%;
   color: #8d8d8d;
+}
+.contact__form input:hover,
+.contact__form textarea:hover {
+  border: 1px solid rgb(172, 188, 240);
+}
+input:focus,
+textarea:focus {
+  outline: rgb(187, 190, 199);
+  border: 1px solid rgb(202, 205, 212);
 }
 
 .contact__tittle {
@@ -367,7 +378,7 @@ input text::placeholder {
   display: inline;
 } */
 .contact__img {
-  width: 52%;
+  width: 48%;
   position: relative;
 }
 
