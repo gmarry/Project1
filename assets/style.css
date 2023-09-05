@@ -612,7 +612,7 @@ div.img_firstline {
 /* Диана секция 4 конец */
 /*Footer start*/
 footer {
-  background-color: black;
+  background-color: rgba(44,44,44,1);
   color: #fff;
   padding: 20px 0;
 }
