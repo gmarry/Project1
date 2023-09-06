@@ -450,7 +450,7 @@ div.img_firstline {
     overflow-wrap: break-word;
   }
   .img_first_button {
-    margin-top: 2%;
+    margin-top: 35%;
     margin-left: 2%;
   }
   .img_second {
@@ -519,13 +519,13 @@ div.img_firstline {
     width: 100%;
   }
 }
-@media (max-width: 801px) {
+@media (min-width: 769px) {
   .img_firstline {
     position: relative;
     width: 100%;
   }
   .img_first button {
-    margin-top: 30%;
+    margin-top: 20%;
   }
 }
 /* the end of section4 Our Projects */
