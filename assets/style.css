@@ -278,8 +278,11 @@ h2 {
 
 .about {
   display: grid;
+  background-color: rgba(251, 251, 251, 1);
   grid-template-columns: 60% 38%;
-  padding: 100px 40px 10px;
+  max-width: 100vw;
+  padding: 40px 40px 10px;
+  margin-top: 120px;
   justify-items: stretch;
 }
 
