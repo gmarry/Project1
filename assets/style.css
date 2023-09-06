@@ -449,7 +449,7 @@ div.img_firstline {
     font-size: 3rem;
     overflow-wrap: break-word;
   }
-  .img_first button {
+  .img_first_button {
     margin-top: 2%;
     margin-left: 2%;
   }
@@ -659,7 +659,7 @@ input text::placeholder {
 
 .contact__img img {
   width: 100%;
-  margin: 10% 0;
+  margin: 35% 0;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
