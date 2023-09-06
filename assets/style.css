@@ -147,6 +147,7 @@ nav a {
   grid-template-columns: 32% 64%;
   justify-items: center; /* Выравнивание по вертикали по центру */
   align-items: center; /* Выравнивание по горизонтали влево */
+  position: relative;
 }
 
 .section1 img {
@@ -166,7 +167,20 @@ nav a {
   padding-bottom: 100%;
 }
    */
+.section1_right_side {
+  position: relative;
+}
+.section1_right {
+  max-width: 100%;
+  height: auto;
+}
 
+.section1_right_side > .button-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* padding: 10px; */
+}
 .section1_first-title {
   font-family: Roboto;
   text-align: left; /* Выравнивание текста влево */
@@ -217,6 +231,46 @@ h2 {
 }
 
 /* end of section1 Project Lorem*/
+
+/*Button*/
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 71px;
+  width: 222px;
+  border: none;
+  /* padding: 10px, 20px; */
+  cursor: pointer;
+}
+.white__button {
+  border: none;
+  color: rgba(51, 51, 51, 1);
+  background-color: #fff;
+  /* padding: 10px, 20px;
+  cursor: pointer; */
+  /* margin: 10px; */
+}
+
+.black__button {
+  border: none;
+  background-color: rgba(51, 51, 51, 1);
+  color: #fff;
+  /* padding: 10px, 20px;
+  cursor: pointer; */
+  /* margin: 10px; */
+}
+
+.button-container button {
+  color: rgba(51, 51, 51, 1);
+  text-decoration: none;
+  color: var(--Gray-1, #333);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+}
 
 /* MARIA */
 
@@ -437,7 +491,7 @@ div.img_firstline {
   margin-top: 2.5%;
   margin-right: 2.5%;
 }
-.button {
+/* .button {
   max-width: 1170px;
   display: flex;
   justify-content: flex-end;
@@ -447,6 +501,19 @@ div.img_firstline {
   width: 20%;
   height: 70px;
   background: #333;
+} */
+.black__button__position {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+
+.black__button__position > .button-container {
+  justify-content: flex-end;
+}
+
+.black__button__position > .button-container button {
+  color: #fff;
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
   section.img {
@@ -481,12 +548,12 @@ div.img_firstline {
     justify-content: space-between;
     margin-top: 2%;
   }
-  .button {
+  /* .button {
     justify-content: flex-start;
   }
   .button button {
     height: 25px;
-  }
+  } */
 }
 @media (min-width: 320px) and (max-width: 767px) {
   section.img {
@@ -521,12 +588,12 @@ div.img_firstline {
     margin-top: 2%;
     width: 100%;
   }
-  .button {
+  /* .button {
     justify-content: flex-start;
   }
   .button button {
     height: 25px;
-  }
+  } */
   .tittle {
     font-size: 2rem;
   }
