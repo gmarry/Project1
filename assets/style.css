@@ -135,7 +135,7 @@ nav a {
 /* Main */
 
 .main {
-  margin: 0;
+  margin: 135px;
   max-width: 100vw;
 }
 
@@ -989,10 +989,53 @@ footer div ul li a {
   height: 260px; */
   object-fit: cover;
   margin: 5px;
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> 4202c712baaa9053522f8d08d0e565abd553e4bf
 }
 
 .main__gallery img:hover {
   transform: scale(1.1);
+}
+
+/*Sample Project page*/
+/* Стили для всех строк */
+.row {
+  width: 100%; /* Все строки будут одинаковой ширины */
+}
+
+/* Отступы по бокам 35 пикселей для первой и третьей картинки */
+.image-fullwidth {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+/* Отступы по бокам 35 пикселей для второй строки */
+.image-text-row {
+  display: flex;
+  margin-left: 35px;
+  margin-right: 35px;
+  align-items: center; /* Выравнивание по вертикали */
+  gap: 30px; /* Расстояние между картинкой и текстом */
+}
+
+/* Стили для картинок во всех трех строках */
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Стили для второй картинки */
+.image-text-row .image-container img {
+  height: 100%; /* Высота будет равна высоте второй строки */
+  object-fit: cover; /* Заполнение по размеру с обрезкой */
+}
+
+/* Стили для текста во второй строке */
+.text-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Цвет текста */
 }
