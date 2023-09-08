@@ -182,12 +182,13 @@ nav a {
   /* padding: 10px; */
 }
 .section1_first-title {
-  font-family: Roboto;
-  text-align: left; /* Выравнивание текста влево */
+  
 }
 
 h1 {
-  opacity: 0;
+  text-align: left; /* Выравнивание текста влево */
+  font-family: Roboto;
+
 }
 
 h2 {
@@ -196,10 +197,16 @@ h2 {
   /* font-size: 3em; */
   font-style: normal;
   font-weight: 300;
-  /* line-height: 64px; */
 }
 .section1_first-title_first-word {
   margin: 0;
+  color: var(--Gray-4, #bdbdbd);
+  font-size: 64px;
+  /* font-size: 3em; */
+  font-style: normal;
+  font-weight: 300;
+  font-family: Roboto;
+  line-height: 64px;
 }
 
 .bold-title {
@@ -212,7 +219,7 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  h2 .bold-title {
+  h1 .bold-title {
     font-size: 1.5em;
     text-align: center; /* Выравниванием заголовок по центру на более узких экранах */
   }
