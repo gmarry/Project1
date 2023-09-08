@@ -958,6 +958,14 @@ footer div ul li a {
   text-decoration: none;
   color: #fff;
 }
+/* последняя строка в footer */
+.footer-and {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 80px;
+  padding-top: 40px;
+  }
+
 
 .social-media ul {
   display: flex;
