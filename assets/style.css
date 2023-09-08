@@ -518,7 +518,7 @@ h2 {
   gap: 2.7%;
 }
 .img_firstline_link {
-  background: url(/assets/Images/Img_main/projects1.png) rgba(51, 51, 51, 0.6);
+  background: url(./assets/Images/Img_main/projects1.png) rgba(51, 51, 51, 0.6);
   background-blend-mode: multiply;
 }
 
