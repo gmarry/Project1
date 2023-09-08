@@ -191,7 +191,6 @@ nav a {
 h1 {
   text-align: left; /* Выравнивание текста влево */
   font-family: Roboto;
-  
 }
 
 h2 {
@@ -375,7 +374,6 @@ h2 {
 
 /* section3 Main Focus start */
 
-
 .section3 {
   /* Устанавливаем отступ сверху, равный 5% от ширины родительского контейнера */
   margin-top: 5%;
@@ -385,7 +383,6 @@ h2 {
   margin-right: 9%;
   max-width: 100%;
 }
-
 
 .section3__title {
   margin-top: 5%;
@@ -485,7 +482,6 @@ h2 {
   }
 }
 
-
 /* the end of section3 */
 
 /* DIANA */
@@ -511,11 +507,16 @@ h2 {
   width: 100%;
   margin-left: 4%;
   margin-right: 9.3%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 2.7%;
+  gap: 4%;
+}
+.img_firstline img {
+  max-width: 100%; /* Максимальная ширина изображения не больше 100% контейнера */
+  height: 100%; /* Автоматическая высота для сохранения соотношения сторон */
+  object-fit: cover;
 }
 .img_firstline_link {
   background: url(./assets/Images/Img_main/projects1.png) rgba(51, 51, 51, 0.6);
@@ -557,16 +558,21 @@ h2 {
 .img_secondline {
   max-width: 1100px;
   width: 100%;
-  margin-top: 2.7%;
+  margin-top: 4%;
   display: grid;
   margin-left: 4%;
-  /* * margin-right: 10%; */
-  border: 1px solid red;
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  margin-right: 10%;
+  /* border: 1px solid red; */
+  grid-template-columns: 1fr 1.74fr 1.27fr;
   grid-template-rows: repeat(1, 1fr);
-  gap: 2%;
+  gap: 4%;
 }
+.img_secondline img {
+  max-width: 100%; /* Максимальная ширина изображения не больше 100% контейнера */
+  height: 100%; /* Автоматическая высота для сохранения соотношения сторон */
+  object-fit: cover;
+}
+
 div.img__button {
   margin: 4%;
   width: 100%;
@@ -964,8 +970,7 @@ footer div ul li a {
   align-items: flex-end;
   margin-top: 80px;
   padding-top: 40px;
-  }
-
+}
 
 .social-media ul {
   display: flex;
@@ -1008,14 +1013,13 @@ footer div ul li a {
 
 /* .root {
   /* padding-left: 135px; */
-/* } */ */
-
-.main__gallery {
+/* } */
+*/ .main__gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-content: center;
-  max-width: 100%; 
+  max-width: 100%;
   row-gap: 5%;
   column-gap: 5%;
 }
@@ -1025,7 +1029,7 @@ grid-template-rows: repeat(2, 1fr);
   height: 260px; */
   object-fit: cover;
   margin: 5px;
-} 
+}
 
 .main__gallery img:hover {
   transform: scale(1.1);
