@@ -1240,3 +1240,28 @@ body {
 }
 
 /* Style of page "our Project"  the end */
+
+/* EKATERINA */
+
+/* Company Certifications */
+
+.empty_container{
+
+max-width: 100%;
+max-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  
+
+  .section1_first-title_first-word, p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .bold-title, p{
+    font-size: 1.5em;
+    text-align: center;
+
+  }
+}
