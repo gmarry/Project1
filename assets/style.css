@@ -784,11 +784,13 @@ textarea {
   margin-bottom: 2%;
 }
 .contact__form input:hover,
-.contact__form textarea:hover {outline: 1px solid rgb(174, 174, 174);}
+.contact__form textarea:hover {
+  outline: 1px solid rgb(174, 174, 174);
+}
 
-.contact__form input:focus
-{outline: 1px solid rgb(174, 174, 174);}
-
+.contact__form input:focus {
+  outline: 1px solid rgb(174, 174, 174);
+}
 
 .contact__tittle {
   color: #bdbdbd;
@@ -1059,15 +1061,16 @@ footer div ul li a {
     row-gap: 5px;
   }
 
-  .section1_first-title_first-word, p {
+  .section1_first-title_first-word,
+  p {
     font-size: 1.5em;
     text-align: center;
   }
 
-  .bold-title, p{
+  .bold-title,
+  p {
     font-size: 1.5em;
     text-align: center;
-
   }
 }
 
@@ -1075,33 +1078,43 @@ footer div ul li a {
 
 /* MARIA */
 /*Sample Project page*/
-
 /* Стили для всех строк */
 .row {
   width: 100%; /* Все строки будут одинаковой ширины */
+  padding-top: 10px;
 }
 
-/* Отступы по бокам 35 пикселей для первой и третьей картинки */
-.image-fullwidth {
-  margin-left: 35px;
-  margin-right: 35px;
+.image-fullwidth img {
+  width: 100%;
 }
 
 /* Отступы по бокам 35 пикселей для второй строки */
 .image-text-row {
-  display: flex;
-  margin-left: 35px;
-  margin-right: 35px;
-  align-items: center; /* Выравнивание по вертикали */
+  display: grid;
+  align-items: stretch; /* Выравнивание по вертикали */
   gap: 30px; /* Расстояние между картинкой и текстом */
+  grid-template-columns: 4fr 6fr;
+  grid-template-areas: "image text";
+}
+
+@media screen and (max-width: 768px) {
+  .image-text-row {
+    grid-template-columns: 1fr;
+    grid-template-areas: "text" "image";
+  }
 }
 
 /* Стили для картинок во всех трех строках */
 .image-container img {
   width: 100%;
-  height: auto;
+  height: 100%; /* Высота будет равна высоте родительского контейнера */
+  object-fit: cover; /* Заполнение по размеру с обрезкой */
 }
 
+/* Стили для картинок во всех трех строках */
+.image-container {
+  grid-area: image; /* Указываем, что этот блок идет в область "image" */
+}
 /* Стили для второй картинки */
 .image-text-row .image-container img {
   height: 100%; /* Высота будет равна высоте второй строки */
@@ -1109,11 +1122,18 @@ footer div ul li a {
 }
 
 /* Стили для текста во второй строке */
+.text-container {
+  grid-area: text; /* Указываем, что этот блок идет в область "text" */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .text-container p {
   font-size: 16px;
   line-height: 1.5;
   color: #333; /* Цвет текста */
 }
+
 /* Style or page "our Project"  start*/
 body {
   width: 100%;
@@ -1245,23 +1265,21 @@ body {
 
 /* Company Certifications */
 
-.empty_container{
-
-max-width: 100%;
-max-height: 100%;
+.empty_container {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  
-
-  .section1_first-title_first-word, p {
+  .section1_first-title_first-word,
+  p {
     font-size: 1.5em;
     text-align: center;
   }
 
-  .bold-title, p{
+  .bold-title,
+  p {
     font-size: 1.5em;
     text-align: center;
-
   }
 }
