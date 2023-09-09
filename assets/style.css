@@ -184,14 +184,8 @@ nav a {
   left: 0;
   /* padding: 10px; */
 }
-<<<<<<< HEAD
-.section1_first-title {
-}
-=======
 /* .section1_first-title {
-
 } */
->>>>>>> 85fc2923b013300e51b0b108bc57413913dc4c01
 
 h1 {
   text-align: left; /* Выравнивание текста влево */
@@ -516,11 +510,7 @@ h2 {
   width: 100%;
   margin-left: 4%;
   margin-right: 9.3%;
-<<<<<<< HEAD
-
-=======
   /* border: 1px solid red; */
->>>>>>> 85fc2923b013300e51b0b108bc57413913dc4c01
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -595,16 +585,10 @@ section.img div.img_firstline_link div.button-container {
   margin-top: 4%;
   display: grid;
   margin-left: 4%;
-<<<<<<< HEAD
   /* * margin-right: 10%; */
 
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-=======
-  margin-right: 10%;
-  /* border: 1px solid red; */
-  grid-template-columns: 1fr 1.74fr 1.27fr;
->>>>>>> 85fc2923b013300e51b0b108bc57413913dc4c01
   grid-template-rows: repeat(1, 1fr);
   gap: 4%;
 }
@@ -804,7 +788,7 @@ textarea {
 
 .contact__form input:focus
 {outline: 1px solid rgb(174, 174, 174);}
-}
+
 
 .contact__tittle {
   color: #bdbdbd;
@@ -1049,31 +1033,49 @@ footer div ul li a {
 
 /* Gallery */
 
-/* .root {
-  /* padding-left: 135px; */
-/* } */
-*/ .main__gallery {
+.main__gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   max-width: 100%;
-  row-gap: 5%;
-  column-gap: 5%;
 }
 
 .main__gallery img {
-  /* width: 210px;
-  height: 260px; */
+  max-width: 90%;
+  max-height: 90%;
   object-fit: cover;
-  margin: 5px;
+  margin: auto;
 }
 
 .main__gallery img:hover {
   transform: scale(1.1);
 }
+@media screen and (max-width: 768px) {
+  .main__gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+  }
 
+  .section1_first-title_first-word, p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .bold-title, p{
+    font-size: 1.5em;
+    text-align: center;
+
+  }
+}
+
+/* Gallery the end */
+
+/* MARIA */
 /*Sample Project page*/
+
 /* Стили для всех строк */
 .row {
   width: 100%; /* Все строки будут одинаковой ширины */
@@ -1235,4 +1237,6 @@ body {
   .conteiner_first h2 {
     font-size: 3rem;
   }
-} /* Style or page "our Project"  end*/
+}
+
+/* Style of page "our Project"  the end */
