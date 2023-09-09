@@ -182,13 +182,11 @@ nav a {
   /* padding: 10px; */
 }
 .section1_first-title {
-  
 }
 
 h1 {
   text-align: left; /* Выравнивание текста влево */
   font-family: Roboto;
-
 }
 
 h2 {
@@ -373,7 +371,6 @@ h2 {
 
 /* section3 Main Focus start */
 
-
 .section3 {
   /* Устанавливаем отступ сверху, равный 5% от ширины родительского контейнера */
   margin-top: 5%;
@@ -383,7 +380,6 @@ h2 {
   margin-right: 9%;
   max-width: 100%;
 }
-
 
 .section3__title {
   margin-top: 5%;
@@ -483,7 +479,6 @@ h2 {
   }
 }
 
-
 /* the end of section3 */
 
 /* DIANA */
@@ -509,7 +504,7 @@ h2 {
   width: 100%;
   margin-left: 4%;
   margin-right: 9.3%;
-  border: 1px solid red;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -559,7 +554,7 @@ h2 {
   display: grid;
   margin-left: 4%;
   /* * margin-right: 10%; */
-  border: 1px solid red;
+
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: repeat(1, 1fr);
@@ -742,6 +737,13 @@ textarea {
   height: 45px;
   width: 100%;
   color: #8d8d8d;
+  margin-bottom: 2%;
+}
+.contact__form input:hover,
+.contact__form textarea:hover {outline: 1px solid rgb(174, 174, 174);}
+
+.contact__form input:focus
+{outline: 1px solid rgb(174, 174, 174);}
 }
 
 .contact__tittle {
@@ -790,23 +792,7 @@ input text::placeholder {
   font-style: normal;
   color: #8d8d8d;
 }
-/* .email_text {
-  z-index: 100;
-  position: absolute;
-  cursor: text;
-  top: 4px;
 
-  color: #8d8d8d;
-  left: 8px;
-}
-
-.email {
-  position: relative;
-  overflow: hidden;
-}
-.email input:invalid + .email_text {
-  display: inline;
-} */
 .contact__img {
   width: 52%;
   position: relative;
@@ -814,7 +800,7 @@ input text::placeholder {
 
 .contact__img img {
   width: 100%;
-  margin: 10% 0;
+  margin: 25% 0;
   position: absolute;
 }
 .form_black__button {
@@ -1017,7 +1003,7 @@ footer div ul li a {
   height: 260px; */
   object-fit: cover;
   margin: 5px;
-} 
+}
 
 .main__gallery img:hover {
   transform: scale(1.1);
@@ -1062,3 +1048,127 @@ footer div ul li a {
   line-height: 1.5;
   color: #333; /* Цвет текста */
 }
+/* Style or page "our Project"  start*/
+body {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 0;
+}
+.conteiner {
+  /* min-width: 1170px; */
+  width: 100%;
+}
+.conteiner__tittle {
+  margin-left: 9%;
+  margin-right: 71%;
+}
+.conteiner__tittle h1 {
+  color: var(--Gray-4, #bdbdbd);
+  font-family: Roboto;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 4rem; /* 100% */
+}
+.conteiner__tittle span {
+  color: var(--Gray-1, #333);
+  font-family: Roboto;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem; /* 100% */
+}
+
+.conteiner button {
+  width: 38%;
+  padding-left: 0;
+
+  border: none;
+  text-transform: uppercase;
+  background-color: white;
+  cursor: pointer;
+}
+.conteiner p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem; /* 156.25% */
+}
+.conteiner h2 {
+  color: var(--Gray-4, #bdbdbd);
+  font-family: Roboto;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.conteiner button {
+  min-width: 15%;
+  height: 15%;
+}
+
+.conteiner_first {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5%;
+  margin-right: 9.3%;
+  margin-left: 9.3%;
+  margin-top: 2%;
+
+  overflow: auto;
+}
+.conteiner_first img {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.conteiner_first h2 {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  margin-right: 6%;
+  overflow: auto;
+}
+.conteiner_first p {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  margin-right: 5%;
+}
+.conteiner_first button {
+  grid-column: 2;
+  grid-row: 3/5;
+}
+@media screen and (max-width: 768px) {
+  .conteiner_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .conteiner_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .conteiner_first p {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.5rem; /* 156.25% */
+  }
+  .conteiner button {
+    width: 48%;
+    font-size: 2rem;
+  }
+  button img {
+    width: 8%;
+  }
+  .conteiner_first h2 {
+    font-size: 3rem;
+  }
+} /* Style or page "our Project"  end*/
