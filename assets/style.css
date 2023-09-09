@@ -534,13 +534,11 @@ section.img div.button-container button.transparent__button {
   color: #fff;
   padding-right: 13.8%;
   padding-bottom: 20.7%;
-  /* display: flex;
-  justify-content: space-around; */
 }
 section.img div.img_firstline_link div.button-container {
   flex-direction: column;
 }
-/* .img_firstline_link button {
+.img_firstline_link button {
   border: none;
   background-color: transparent;
   color: #fff;
@@ -554,7 +552,7 @@ section.img div.img_firstline_link div.button-container {
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 9.8%;
-} */
+}
 
 .img_secondline {
   max-width: 1100px;
@@ -935,25 +933,30 @@ footer div ul li a {
   text-decoration: none;
   color: #fff;
 }
+
 .contacts p a {
   text-decoration: none;
   color: #fff;
   margin-right: 5px;
 }
+
 .contacts p .icon {
   width: 11px;
   height: 16px;
 }
+
 .contacts p .icon_phone {
   width: 16px;
   height: 15px;
   margin-right: 5px;
 }
+
 .contacts p .icon_mail {
   width: 16px;
   height: 11px;
   margin-right: 5px;
 }
+
 .contacts p {
   color: #fff;
   font-family: Roboto;
@@ -965,6 +968,7 @@ footer div ul li a {
   text-decoration: none;
   color: #fff;
 }
+
 /* последняя строка в footer */
 .footer-and {
   display: flex;
