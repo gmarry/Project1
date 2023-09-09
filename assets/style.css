@@ -1078,9 +1078,10 @@ footer div ul li a {
 
 /* MARIA */
 /*Sample Project page*/
+
 /* Стили для всех строк */
 .row {
-  width: 100%; /* Все строки будут одинаковой ширины */
+  width: 100%;
   padding-top: 10px;
 }
 
@@ -1088,13 +1089,44 @@ footer div ul li a {
   width: 100%;
 }
 
-/* Отступы по бокам 35 пикселей для второй строки */
 .image-text-row {
   display: grid;
   align-items: stretch; /* Выравнивание по вертикали */
-  gap: 30px; /* Расстояние между картинкой и текстом */
+  gap: 30px;
   grid-template-columns: 4fr 6fr;
   grid-template-areas: "image text";
+}
+
+/* Стили для картинок во всех трех строках */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Стили для картинок во всех трех строках */
+.image-container {
+  grid-area: image;
+}
+
+/* Стили для второй картинки */
+.image-text-row .image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Стили для текста во второй строке */
+.text-container {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
 @media screen and (max-width: 768px) {
@@ -1104,35 +1136,7 @@ footer div ul li a {
   }
 }
 
-/* Стили для картинок во всех трех строках */
-.image-container img {
-  width: 100%;
-  height: 100%; /* Высота будет равна высоте родительского контейнера */
-  object-fit: cover; /* Заполнение по размеру с обрезкой */
-}
-
-/* Стили для картинок во всех трех строках */
-.image-container {
-  grid-area: image; /* Указываем, что этот блок идет в область "image" */
-}
-/* Стили для второй картинки */
-.image-text-row .image-container img {
-  height: 100%; /* Высота будет равна высоте второй строки */
-  object-fit: cover; /* Заполнение по размеру с обрезкой */
-}
-
-/* Стили для текста во второй строке */
-.text-container {
-  grid-area: text; /* Указываем, что этот блок идет в область "text" */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.text-container p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333; /* Цвет текста */
-}
+/*End page Sample_Projects*/
 
 /* Style or page "our Project"  start*/
 body {
@@ -1283,8 +1287,6 @@ body {
     text-align: center;
   }
 }
-<<<<<<< HEAD
-=======
 
 /* Sveta- Contact-Information */
 /* карта  */
@@ -1294,7 +1296,7 @@ body {
   margin-right: 50px;
 }
 /* company name */
-.section-adress{
+.section-adress {
   margin-left: 30px;
   padding-top: 50px;
 }
@@ -1313,17 +1315,16 @@ body {
 /* кнопка */
 .button-but {
   background-color: rgb(51, 51, 51, 1);
-  color: #ffffff; 
+  color: #ffffff;
   width: 222px;
   height: 7vh;
   margin-left: 50px;
 }
 .but {
-  color: #ffffff; 
-  padding:30px;
+  color: #ffffff;
+  padding: 30px;
   margin-top: 15px;
   text-decoration: none;
-  
 }
 .name {
   font-size: 20px;
@@ -1335,5 +1336,3 @@ body {
   margin-left: 30px;
   padding-top: 50px;
 }
-
->>>>>>> ef82d27ef6604423b7725cb462554bb5056a0f13
