@@ -7,8 +7,6 @@
 /* body */
 
 body {
-  /* margin: 0; */
-  /* padding: 0; */
   font-family: Roboto, Arial, sans-serif;
   width: 100%;
 }
@@ -39,7 +37,6 @@ body {
   padding: 2% 4vw;
   background: white;
   color: grey;
-  /* position: fixed; */
   width: 100%;
 }
 
@@ -159,16 +156,8 @@ nav a {
 
 .section1_left {
   max-height: 100%;
-  /* display: grid; */
 }
 
-/* .main__section1_right { */
-/* background-image: url("./Images/Img_main/section1.png"); */
-/* background-size: cover; */
-/* max-height: 100%;
-  padding-bottom: 100%;
-}
-   */
 .section1_right_side {
   position: relative;
 }
@@ -181,10 +170,7 @@ nav a {
   position: absolute;
   bottom: 0;
   left: 0;
-  /* padding: 10px; */
 }
-/* .section1_first-title {
-} */
 
 h1 {
   text-align: left; /* Выравнивание текста влево */
@@ -194,10 +180,10 @@ h1 {
 h2 {
   color: var(--Gray-4, #bdbdbd);
   font-size: 64px;
-  /* font-size: 3em; */
   font-style: normal;
   font-weight: 300;
 }
+
 .section1_first-title_first-word {
   margin: 0;
   color: var(--Gray-4, #bdbdbd);
@@ -214,7 +200,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   margin: 0;
-  text-align: left; /* Выравнивание текста влево */
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
@@ -281,6 +267,9 @@ h2 {
   line-height: 12px;
   letter-spacing: 2.4px;
 }
+.button-container a.button {
+  text-decoration: none;
+}
 
 /* MARIA */
 
@@ -289,52 +278,68 @@ h2 {
 .about {
   display: grid;
   background-color: rgba(251, 251, 251, 1);
-  grid-template-columns: 60% 38%;
-  max-width: 100vw;
-  padding: 40px 40px 10px;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  padding: 40px 0 10px;
   margin-top: 120px;
   justify-items: stretch;
-}
-
-@media screen and (max-width: 768px) {
-  .about {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 40px 40px 10px;
-  }
+  grid-template-areas: "right" "left";
 }
 
 .about__img-left {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-template: left;
+}
+
+.about__img-left__container {
+  display: grid;
   align-items: center;
   grid-gap: 10px;
-  justify-items: stretch;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  align-content: center;
+}
+
+.about__img-left__container img {
+  width: 100%;
 }
 .about__img-left__img1 {
-  grid-row: 1;
-  grid-column: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  justify-self: center;
+  align-self: end;
 }
 .about__img-left__img2 {
-  grid-row: 2;
-  grid-column: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  justify-self: center;
+  align-self: start;
 }
 
 .about__img-left__img3 {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
+  grid-row: 1 / 3;
+  justify-self: center;
+  align-self: center;
 }
 
 @media screen and (max-width: 768px) {
+  .about {
+    grid-template-columns: 100%;
+    grid-template-areas: "text" "img";
+  }
+
+  .about__text-right {
+    grid-area: text;
+    padding: 10px 15px;
+  }
+
+  .about__img-left__container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+
   .about__img-left {
+    grid-area: img; /* Указываем, что этот блок идет в область "img" */
     grid-template-columns: 1fr; /* Одна колонка */
     grid-auto-flow: row; /* Элементы будут размещаться по вертикали */
     align-items: stretch; /* Выравнивание элементов по вертикали */
@@ -354,22 +359,9 @@ h2 {
 
 .about__text-right {
   padding: 50px 100px;
+  grid-template: right;
 }
 
-@media screen and (max-width: 768px) {
-  .about__text-right {
-    padding: 10px 15px;
-  }
-}
-
-/* .about__text-right h2 {
-  color: var(--gray-4, #bdbdbd);
-  font-family: Roboto;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 64px;
-} */
 /* end of section2 About */
 
 /* EKATERINA */
@@ -377,11 +369,8 @@ h2 {
 /* section3 Main Focus start */
 
 .section3 {
-  /* Устанавливаем отступ сверху, равный 5% от ширины родительского контейнера */
   margin-top: 5%;
-  /* Устанавливаем отступ слева */
   margin-left: 10%;
-  /* Устанавливаем отступ справа */
   margin-right: 9%;
   max-width: 100%;
 }
@@ -406,16 +395,13 @@ h2 {
 
 .section3__item1,
 .section3__item2 {
-  /* Распределяем доступное горизонтальное пространство между .section3__item1 и .section3__item2 */
   flex: 1;
-  /* Отображаем элементы как гибкие блоки в строку */
   display: flex;
-  /* Выравниваем элементы по верхнему краю */
   align-items: flex-start;
-  /* Устанавливаем отступ между элементами в 1% от ширины родительского контейнера */
-  margin-right: 1%;
-  /* Устанавливаем максимальную ширину элемента, которая вычисляется как 50% от ширины родительского контейнера минус 93.5px */
-  max-width: calc(50% - 93.5px);
+  margin-right: 1%; /* Устанавливаем отступ между элементами в 1% от ширины родительского контейнера */
+  max-width: calc(
+    50% - 93.5px
+  ); /* Устанавливаем максимальную ширину элемента, которая вычисляется как 50% от ширины родительского контейнера минус 93.5px */
   /* Учитываем padding и border в размере элемента */
   box-sizing: border-box;
 }
@@ -427,9 +413,7 @@ h2 {
   font-size: 13em;
   font-style: normal;
   font-weight: 900;
-  /* Задаем высоту строки, оставляем по умолчанию (normal) */
-  line-height: normal;
-  /* Устанавливаем отступ справа для текста в 10px */
+  line-height: normal; /* Задаем высоту строки, оставляем по умолчанию (normal) */
   margin-right: 10px;
 }
 
@@ -459,28 +443,21 @@ h2 {
 
 /* Медиа-запрос для экранов шириной меньше или равной 768px */
 @media screen and (max-width: 768px) {
-  /* Устанавливаем элементам .section3__item1 и .section3__item2 следующие стили: */
   .section3__item1,
   .section3__item2 {
-    /* Распределение по ширине в соответствии с экраном */
-    flex: 1 0 100%;
-    /* Убираем горизонтальный отступ */
+    flex: 1 0 100%; /* Распределение по ширине в соответствии с экраном */
     margin-right: 0;
-    /* Максимальная ширина элемента на мобильных устройствах (занимают всю доступную ширину) */
     max-width: 100%;
-    /* Добавляем вертикальный отступ между элементами на мобильных устройствах */
     margin-bottom: 20px;
   }
 }
 
 /* Медиа-запрос для экранов шириной больше или равной 2000px */
 @media screen and (min-width: 2000px) {
-  /* Устанавливаем элементам .section3__item1, .section3__item2 и .section3__text следующие стили: */
   .section3__item1,
   .section3__item2,
   .section3__text {
-    /* Увеличиваем размер шрифта в 2 раза */
-    font-size: 2em;
+    font-size: 2em; /* Увеличиваем размер шрифта в 2 раза */
   }
 }
 
@@ -556,13 +533,11 @@ section.img div.button-container button.transparent__button {
   color: #fff;
   padding-right: 13.8%;
   padding-bottom: 20.7%;
-  /* display: flex;
-  justify-content: space-around; */
 }
 section.img div.img_firstline_link div.button-container {
   flex-direction: column;
 }
-/* .img_firstline_link button {
+.img_firstline_link button {
   border: none;
   background-color: transparent;
   color: #fff;
@@ -576,7 +551,7 @@ section.img div.img_firstline_link div.button-container {
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 9.8%;
-} */
+}
 
 .img_secondline {
   max-width: 1100px;
@@ -957,25 +932,30 @@ footer div ul li a {
   text-decoration: none;
   color: #fff;
 }
+
 .contacts p a {
   text-decoration: none;
   color: #fff;
   margin-right: 5px;
 }
+
 .contacts p .icon {
   width: 11px;
   height: 16px;
 }
+
 .contacts p .icon_phone {
   width: 16px;
   height: 15px;
   margin-right: 5px;
 }
+
 .contacts p .icon_mail {
   width: 16px;
   height: 11px;
   margin-right: 5px;
 }
+
 .contacts p {
   color: #fff;
   font-family: Roboto;
@@ -987,6 +967,7 @@ footer div ul li a {
   text-decoration: none;
   color: #fff;
 }
+
 /* последняя строка в footer */
 .footer-and {
   display: flex;
@@ -1077,9 +1058,10 @@ footer div ul li a {
 
 /* MARIA */
 /*Sample Project page*/
+
 /* Стили для всех строк */
 .row {
-  width: 100%; /* Все строки будут одинаковой ширины */
+  width: 100%;
   padding-top: 10px;
 }
 
@@ -1087,13 +1069,44 @@ footer div ul li a {
   width: 100%;
 }
 
-/* Отступы по бокам 35 пикселей для второй строки */
 .image-text-row {
   display: grid;
   align-items: stretch; /* Выравнивание по вертикали */
-  gap: 30px; /* Расстояние между картинкой и текстом */
+  gap: 30px;
   grid-template-columns: 4fr 6fr;
   grid-template-areas: "image text";
+}
+
+/* Стили для картинок во всех трех строках */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Стили для картинок во всех трех строках */
+.image-container {
+  grid-area: image;
+}
+
+/* Стили для второй картинки */
+.image-text-row .image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Стили для текста во второй строке */
+.text-container {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
 @media screen and (max-width: 768px) {
@@ -1103,35 +1116,7 @@ footer div ul li a {
   }
 }
 
-/* Стили для картинок во всех трех строках */
-.image-container img {
-  width: 100%;
-  height: 100%; /* Высота будет равна высоте родительского контейнера */
-  object-fit: cover; /* Заполнение по размеру с обрезкой */
-}
-
-/* Стили для картинок во всех трех строках */
-.image-container {
-  grid-area: image; /* Указываем, что этот блок идет в область "image" */
-}
-/* Стили для второй картинки */
-.image-text-row .image-container img {
-  height: 100%; /* Высота будет равна высоте второй строки */
-  object-fit: cover; /* Заполнение по размеру с обрезкой */
-}
-
-/* Стили для текста во второй строке */
-.text-container {
-  grid-area: text; /* Указываем, что этот блок идет в область "text" */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.text-container p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333; /* Цвет текста */
-}
+/*End page Sample_Projects*/
 
 /* Style or page "our Project"  start*/
 body {
@@ -1291,7 +1276,7 @@ body {
   margin-right: 50px;
 }
 /* company name */
-.section-adress{
+.section-adress {
   margin-left: 30px;
   padding-top: 50px;
 }
@@ -1310,17 +1295,16 @@ body {
 /* кнопка */
 .button-but {
   background-color: rgb(51, 51, 51, 1);
-  color: #ffffff; 
+  color: #ffffff;
   width: 222px;
   height: 7vh;
   margin-left: 50px;
 }
 .but {
-  color: #ffffff; 
-  padding:30px;
+  color: #ffffff;
+  padding: 30px;
   margin-top: 15px;
   text-decoration: none;
-  
 }
 .name {
   font-size: 20px;
@@ -1332,4 +1316,3 @@ body {
   margin-left: 30px;
   padding-top: 50px;
 }
-
