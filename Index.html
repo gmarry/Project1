@@ -121,60 +121,56 @@
         </div>
       </section>
       <!--Diana-->
-      <section class="img">
-        <h2>Our Project</h2>
-        <div class="img_firstline">
-          <div class="img_firstline_link">
-            <div class="flex">
-              <h2>
-                Sample <br />
-                Project
-              </h2>
-              <div class="button-container">
-                <button
-                  class="transparent__button"
-                  onclick="window.location.href='Sample_project1.html';"
-                >
-                  View More &rarr;
-                </button>
+     
+          <section class="img">
+            <h2>Our Project</h2>
+            <div class="img_firstline">
+              <div class="img_firstline_link">
+                <div class="flex">
+                  <h2>
+                    Sample <br />
+                    Project
+                  </h2>
+                  <button> <a href="Sample_project1.html" class="btn_child_link">
+                    View More &nbsp;
+                    <img
+                      src="assets/Images/Img_main/ico-shape.svg"
+                      alt="icon"
+                    />
+                  </a>
+                  </button>
+                </div>
               </div>
-            </div>
-            <img
-              src="assets/Images/Img_main/projects1.png"
-              alt="background"
-              class="background-img"
-            />
-            <div class="flex_img">
+
               <img src="assets/Images/Img_main/image15.png" alt="link" />
             </div>
-          </div>
-        </div>
-        <div class="img_secondline">
-          <img
-            class="img_secondline_one"
-            src="assets/Images/Img_main/projects3.png"
-            alt="link"
-          />
-          <img
-            class="img_secondline_two"
-            src="assets/Images/Img_main/image17.png"
-            alt="link"
-          />
-          <img
-            class="img_secondline_three"
-            src="assets/Images/Img_main/projects5.png"
-            alt="link"
-          />
-        </div>
-        <div class="img__button">
-          <button class="form_black__button">
-            <a href="our_project.html">
-              ALL PROJECTS &nbsp;
-              <img src="./assets/Images/Img_main/ico-shape.svg" alt="icon"
-            /></a>
-          </button>
-        </div>
-      </section>
+            <div class="img_secondline">
+              <img
+                class="img_secondline_one"
+                src="assets/Images/Img_main/image16.png"
+                alt="link"
+              />
+              <img
+                class="img_secondline_two"
+                src="assets/Images/Img_main/image17.png"
+                alt="link"
+              />
+              <img
+                class="img_secondline_three"
+                src="assets/Images/Img_main/image18.png"
+                alt="link"
+              />
+            </div>
+            <div class="btn">
+              <button class="btn_child"><a href="our_project.html" class="btn_child_link">
+                ALL PROJECTS &nbsp;
+                <img src="assets/Images/Img_main/ico-shape.svg" alt="icon" />
+              </button>
+            </div>
+          </section>
+        </body>
+      </html>
+
       <section class="contact">
         <div class="contact__group">
           <h2 class="contact__tittle">Contact Us</h2>
@@ -185,36 +181,50 @@
             enctype="multipart/form-data"
           >
             <div>
-              <label for="name" class="tel">
+              <label for="link" class="tel">
                 <input
-                  class="tel"
+                  class="tell"
                   type="text"
                   value=""
                   name="Name"
                   required="required"
-                  id="name"
+                  id="link"
                 />
                 <div class="tel_text">Name <span>*</span></div>
               </label>
             </div>
-
-            <div class="phone">
-              <label for="tel" class="tel">
-                <input type="tel" name="tel" required="required" id="tel" />
-                <div class="tel_text">Number Phone <span>*</span></div>
+            <div>
+              <label for="link_phone" class="tel">
+                <input
+                  class="tell"
+                  type="tel"
+                  value=""
+                  name="Name"
+                  required="required"
+                  id="link_phone"
+                />
+                <div class="tel_text">Number Phone<span>*</span></div>
               </label>
             </div>
-            <div class="phone">
-              <label for="email" class="tel">
-                <input type="text" name="tel" required="required" id="email" />
+            <div>
+              <label for="link_phone" class="tel">
+                <input
+                  class="tell"
+                  type="tel"
+                  value=""
+                  name="Name"
+                  required="required"
+                  id="link_phone"
+                />
                 <div class="tel_text">E-mail<span>*</span></div>
               </label>
             </div>
+
             <div>
               <input
                 type="text"
                 name="Interested"
-                placeholder="Interested In"
+                placeholder="&nbsp;Interested In"
               />
             </div>
             <textarea
@@ -224,12 +234,12 @@
               rows="100"
               placeholder="Message"
             ></textarea>
-            <button class="form_black__button">
-              SEND EMAIL &nbsp;
-              <img src="/assets/Images/Img_main/ico-shape.svg" alt="icon" />
+            <button class="btn_child">
+              SEND E-MAIL <img src="assets/Images/Img_main/ico-shape.svg" />
             </button>
           </form>
         </div>
+
         <div class="contact__img">
           <img src="assets/Images/Img_main/image12.png" alt="call us" />
         </div>

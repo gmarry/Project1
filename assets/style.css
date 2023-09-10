@@ -469,43 +469,24 @@ h2 {
   font-style: normal;
   font-weight: 300;
   line-height: 4rem; /* 100% */
-  margin-left: 4%;
+  margin-left: 2%;
 }
-.img {
-  max-width: 1100px;
-  width: 100%;
-  margin-right: 9%;
-}
+/* .img {
+  min-width: 1000px;
+} */
 .img_firstline {
   /* min-width: 1000px; */
-  width: 100%;
-  margin-left: 4%;
-  margin-right: 9.3%;
-  /* border: 1px solid red; */
+  width: 97%;
+  /* margin-left: 2%; */
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 4%;
-}
-.img_firstline img {
-  max-width: 100%; /* Максимальная ширина изображения не больше 100% контейнера */
-  height: 100%; /* Автоматическая высота для сохранения соотношения сторон */
-  object-fit: cover;
+  gap: 2.7%;
 }
 .img_firstline_link {
-  background: url(assets/Images/Img_main/projects1.png) rgba(51, 51, 51, 0.6);
+  background: url(/assets/Images/Img_main/Rectangle12.png) rgba(51, 51, 51, 0.6);
   background-blend-mode: multiply;
-  position: relative;
-}
-
-.background-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* Перемещает фоновое изображение под контент */
 }
 
 .flex {
@@ -524,81 +505,63 @@ h2 {
   margin-left: 12.8%;
   margin-top: 5%;
 }
-section.img div.button-container button.transparent__button {
-  color: #fff;
-  padding-right: 13.8%;
-  padding-bottom: 20.7%;
-}
-section.img div.img_firstline_link div.button-container {
-  flex-direction: column;
-}
 .img_firstline_link button {
   border: none;
   background-color: transparent;
   color: #fff;
   width: 42%;
-
+  color: #fff;
   font-family: Gothic A1;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.2rem;
+  line-height: 1.2rem; /* 100% */
+  /* letter-spacing: 2.4px; */
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 9.8%;
+  margin-left: 12.8%;
 }
-
+.btn_child_link {
+  color: #f2f2f2;
+}
 .img_secondline {
-  max-width: 1100px;
-  width: 100%;
-  margin-top: 4%;
+  min-width: 1000px;
+  width: 97%;
+  margin-top: 2.7%;
   display: grid;
-  margin-left: 4%;
-  /* * margin-right: 10%; */
+  /* margin-left: 2%;
+  margin-right: 9.3%; */
 
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 4%;
+  gap: 2.7%;
 }
-.img_secondline img {
-  max-width: 100%; /* Максимальная ширина изображения не больше 100% контейнера */
-  height: 100%; /* Автоматическая высота для сохранения соотношения сторон */
-  object-fit: cover;
-}
-div.button-container button.black__button {
-  color: #fff;
-  /* margin-left: 13.8%;
-  margin-bottom: 20.7%; */
-  display: flex;
-  justify-content: flex-end;
-}
-/* div.img__button {
-  margin: 4%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-} */
-/* .form_black__button {
-  justify-self: flex-end;
-} */
-/* .img_secondline_one {
+
+.img_secondline_one {
   grid-column: 1/2;
 }
 .img_secondline_two {
-  grid-column: 1/2;
+  grid-column: 2/3;
 }
-
 .img_secondline_three {
   grid-column: 3/4;
-}   */
+}
 
-/* .btn {
-  width: 15%;
+.btn {
+  width: 97%;
   display: flex;
+  justify-content: flex-end;
+  margin-top: 2.7%;
+}
+.btn_child {
+  min-width: 222px;
+  min-height: 71px;
   justify-self: flex-end;
   background: var(--Gray-1, #333);
-} */
+  color: #fff;
+  cursor: grab;
+}
 @media (max-width: 768px) {
   .img_firstline {
     display: inline-block;
@@ -666,54 +629,28 @@ div.button-container button.black__button {
   .img_firstline_link img {
     width: 10%;
   }
-}
-@media only screen and (min-width: 1800px) {
-  section.img {
-    min-width: 100%;
-    margin-left: 4%;
-  }
-
-  .img_secondline {
-    min-width: 100%;
-    margin-left: 4%;
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    gap: 5%;
-  }
-  .flex_img img {
-    width: 100%;
-  }
-  .img_secondline_one {
-    grid-column: 1/2;
-    /* /* object-fit: cover; */
-    width: 100%;
-  }
-  .img_secondline_two {
-    grid-column: 3/4;
-
-    width: 100%;
-  }
-  .img_secondline_three {
-    grid-column: 6/7;
-    width: 100%;
+  @media (min-width: 1800px) {
+    .img_firstline img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .img_secondline_one,
+    .img_secondline_two,
+    .img_secondline_three {
+      width: 100%;
+    }
   }
 }
-*/ */
 
 /* the end of section4 Our Projects */
 
 /* section5 Contact Us start */
-
 .contact {
-  max-width: 1100px;
+  width: 100%;
   min-height: 600px;
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
-  margin-left: 9%;
-  margin-right: 9%;
-  border: 1px solid red;
 }
 
 textarea {
@@ -729,22 +666,23 @@ textarea {
 
 .contact__group {
   width: 32%;
-  margin-top: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .contact__form {
   box-sizing: border-box;
   border: transparent;
-  margin-top: 0;
-  margin-left: 10px;
+  margin-top: 5%;
+  /* margin-left: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   /* border: 1px solid red; */
 }
 
 .contact__form input,
 .contact__form textarea {
-  margin-left: 10px;
   border: none;
   background: #f3f3f3;
   height: 45px;
@@ -764,12 +702,12 @@ textarea {
 .contact__tittle {
   color: #bdbdbd;
   font-family: Roboto;
-  font-size: 64px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 span {
@@ -779,7 +717,7 @@ span {
 input {
   color: #8d8d8d;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-style: normal;
 }
 .tel_text {
@@ -815,21 +753,11 @@ input text::placeholder {
 
 .contact__img img {
   width: 100%;
-  margin: 25% 0;
+  margin: 10% 0;
   position: absolute;
 }
-.form_black__button {
-  width: 222px;
-  height: 71px;
-  background-color: #333;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 12px; /* 100% */
-  letter-spacing: 2.4px;
-  text-transform: uppercase;
+.phone {
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .contact__img {
@@ -855,14 +783,27 @@ input text::placeholder {
     white-space: nowrap;
     margin-left: 12px;
   }
-  section.contact {
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-between;
+  .black__button {
+    border: none;
+    background-color: rgba(51, 51, 51, 1);
+    color: #fff;
+    /* padding: 10px, 20px;
+      cursor: pointer; */
+    /* margin: 10px; */
+  }
+
+  .button-container button {
+    color: rgba(51, 51, 51, 1);
+    text-decoration: none;
+    color: var(--Gray-1, #333);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 2.4px;
   }
 }
-
-/* the end of section5 Contact Us */
 
 /* SVETLANA */
 
