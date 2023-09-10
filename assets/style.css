@@ -143,7 +143,7 @@ nav a {
 
 .section1 {
   display: grid;
-  max-width: 100vw;
+  max-width: 100%;
   grid-template-columns: 32% 64%;
   justify-items: center; /* Выравнивание по вертикали по центру */
   align-items: center; /* Выравнивание по горизонтали влево */
@@ -162,6 +162,7 @@ nav a {
 .section1_right_side {
   position: relative;
 }
+
 .section1_right {
   max-width: 100%;
   height: auto;
@@ -1278,7 +1279,6 @@ body {
   right: 0;
 }
 .section1_first-title {
-
 }
 /* company name */
 .section-adress {
