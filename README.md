@@ -152,7 +152,28 @@ header__container nav a:hover {
 }
 
 ```
+#### _Увеличение фотографий при наведении мышки_
 
+```css
+.main__gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  max-width: 100%;
+}
+
+.main__gallery img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.main__gallery img:hover {
+  transform: scale(1.1);
+}
+```
 
 ## Наша команда:
 
