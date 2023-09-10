@@ -58,12 +58,12 @@ nav li {
 nav a {
   text-decoration: none;
   color: var(--gray-1, #333);
-  font-family: Roboto;
+  font-family: Roboto, serif;
   font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: 12px;
-  letter-spacing: 2.4px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 .header__container nav a:hover {
@@ -132,6 +132,7 @@ nav a {
 /* Main */
 
 .main {
+  /* margin: 135px; */
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 15%;
@@ -174,7 +175,7 @@ nav a {
 
 h1 {
   text-align: left; /* Выравнивание текста влево */
-  font-family: Roboto;
+  font-family: Roboto serif;
 }
 
 h2 {
@@ -190,7 +191,7 @@ h2 {
   font-size: 64px;
   font-style: normal;
   font-weight: 300;
-  font-family: Roboto;
+  font-family: Roboto serif;
   line-height: 64px;
 }
 
@@ -222,23 +223,20 @@ h2 {
   }
 }
 
-/* end of section1 Project Lorem*/
-
-/*Button*/
 .button-container {
   display: flex;
   justify-content: flex-start;
-  height: 71px;
-  width: 222px;
   border: none;
-  /* padding: 10px, 20px; */
   cursor: pointer;
+}
+
+.button {
+  padding: 20px 20px;
 }
 .white__button {
   border: none;
   color: rgba(51, 51, 51, 1);
   background-color: #fff;
-
   cursor: pointer;
 }
 
@@ -256,12 +254,12 @@ h2 {
 .button-container button {
   color: rgba(51, 51, 51, 1);
   text-decoration: none;
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 12px;
-  letter-spacing: 2.4px;
+  letter-spacing: 2px;
 }
 .button-container a.button {
   text-decoration: none;
@@ -403,7 +401,7 @@ h2 {
 .section3__one,
 .section3__two {
   color: var(--Gray-6, #f2f2f2);
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 13em;
   font-style: normal;
   font-weight: 900;
@@ -413,7 +411,7 @@ h2 {
 
 .section3__text_one {
   color: var(--Gray-1, #333);
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 1em;
   font-style: normal;
   font-weight: 400;
@@ -425,7 +423,7 @@ h2 {
 
 .section3__text_two {
   color: var(--Gray-1, #333);
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 1em;
   font-style: normal;
   font-weight: 400;
@@ -463,29 +461,48 @@ h2 {
 
 h2 {
   color: var(--Gray-4, #bdbdbd);
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: 300;
   line-height: 4rem; /* 100% */
-  margin-left: 2%;
+  margin-left: 4%;
 }
-/* .img {
-  min-width: 1000px;
-} */
+.img {
+  max-width: 1100px;
+  width: 100%;
+  margin-right: 9%;
+}
 .img_firstline {
   /* min-width: 1000px; */
-  width: 97%;
-  /* margin-left: 2%; */
-
+  width: 100%;
+  margin-left: 4%;
+  margin-right: 9.3%;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 2.7%;
+  gap: 4%;
+}
+.img_firstline img {
+  max-width: 100%; /* Максимальная ширина изображения не больше 100% контейнера */
+  height: 100%; /* Автоматическая высота для сохранения соотношения сторон */
+  object-fit: cover;
 }
 .img_firstline_link {
-  background: url(/assets/Images/Img_main/Rectangle12.png) rgba(51, 51, 51, 0.6);
+  background: url(assets/Images/Img_main/projects1.png) rgba(51, 51, 51, 0.6);
   background-blend-mode: multiply;
+  position: relative;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Перемещает фоновое изображение под контент */
 }
 
 .flex {
@@ -496,7 +513,7 @@ h2 {
 
 .img_firstline_link h2 {
   color: #fff;
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: bold;
@@ -504,63 +521,78 @@ h2 {
   margin-left: 12.8%;
   margin-top: 5%;
 }
+section.img div.button-container button.transparent__button {
+  color: #fff;
+  padding-right: 13.8%;
+  padding-bottom: 20.7%;
+}
+section.img div.img_firstline_link div.button-container {
+  flex-direction: column;
+}
 .img_firstline_link button {
   border: none;
   background-color: transparent;
   color: #fff;
   width: 42%;
-  color: #fff;
-  font-family: Gothic A1;
+
+  font-family: Gothic A1, serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.2rem; /* 100% */
-  /* letter-spacing: 2.4px; */
+  line-height: 1.2rem;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 12.8%;
+  margin-left: 9.8%;
 }
-.btn_child_link {
-  color: #f2f2f2;
-}
+
 .img_secondline {
-  min-width: 1000px;
-  width: 97%;
-  margin-top: 2.7%;
+  max-width: 1100px;
+  width: 100%;
+  margin-top: 4%;
   display: grid;
-  /* margin-left: 2%;
-  margin-right: 9.3%; */
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin-left: 4%;
+  grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: repeat(1, 1fr);
-  gap: 2.7%;
+  gap: 4%;
 }
-
-.img_secondline_one {
+.img_secondline img {
+  max-width: 100%; /* Максимальная ширина изображения не больше 100% контейнера */
+  height: 100%; /* Автоматическая высота для сохранения соотношения сторон */
+  object-fit: cover;
+}
+div.button-container button.black__button {
+  color: #fff;
+  /* margin-left: 13.8%;
+  margin-bottom: 20.7%; */
+  display: flex;
+  justify-content: flex-end;
+}
+/* div.img__button {
+  margin: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+} */
+/* .form_black__button {
+  justify-self: flex-end;
+} */
+/* .img_secondline_one {
   grid-column: 1/2;
 }
 .img_secondline_two {
-  grid-column: 2/3;
-}
-.img_secondline_three {
-  grid-column: 3/4;
+  grid-column: 1/2;
 }
 
-.btn {
-  width: 97%;
+.img_secondline_three {
+  grid-column: 3/4;
+}   */
+
+/* .btn {
+  width: 15%;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 2.7%;
-}
-.btn_child {
-  min-width: 222px;
-  min-height: 71px;
   justify-self: flex-end;
   background: var(--Gray-1, #333);
-  color: #fff;
-  cursor: grab;
-}
+} */
 @media (max-width: 768px) {
   .img_firstline {
     display: inline-block;
@@ -628,28 +660,54 @@ h2 {
   .img_firstline_link img {
     width: 10%;
   }
-  @media (min-width: 1800px) {
-    .img_firstline img {
-      width: 100%;
-      object-fit: cover;
-    }
-    .img_secondline_one,
-    .img_secondline_two,
-    .img_secondline_three {
-      width: 100%;
-    }
+}
+@media only screen and (min-width: 1800px) {
+  section.img {
+    min-width: 100%;
+    margin-left: 4%;
+  }
+
+  .img_secondline {
+    min-width: 100%;
+    margin-left: 4%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+  }
+  .flex_img img {
+    width: 100%;
+  }
+  .img_secondline_one {
+    grid-column: 1/2;
+    /* /* object-fit: cover; */
+    width: 100%;
+  }
+  .img_secondline_two {
+    grid-column: 3/4;
+
+    width: 100%;
+  }
+  .img_secondline_three {
+    grid-column: 6/7;
+    width: 100%;
   }
 }
+*/ */
 
 /* the end of section4 Our Projects */
 
 /* section5 Contact Us start */
+
 .contact {
-  width: 100%;
+  max-width: 1100px;
   min-height: 600px;
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
+  margin-left: 9%;
+  margin-right: 9%;
+  border: 1px solid red;
 }
 
 textarea {
@@ -665,23 +723,22 @@ textarea {
 
 .contact__group {
   width: 32%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 0;
 }
 .contact__form {
   box-sizing: border-box;
   border: transparent;
-  margin-top: 5%;
-  /* margin-left: 10px; */
+  margin-top: 0;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   /* border: 1px solid red; */
 }
 
 .contact__form input,
 .contact__form textarea {
+  margin-left: 10px;
   border: none;
   background: #f3f3f3;
   height: 45px;
@@ -700,13 +757,13 @@ textarea {
 
 .contact__tittle {
   color: #bdbdbd;
-  font-family: Roboto;
-  font-size: 4rem;
+  font-family: Roboto serif;
+  font-size: 64px;
   font-style: normal;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
-  /* margin-left: 10px; */
+  margin-left: 10px;
 }
 
 span {
@@ -715,8 +772,8 @@ span {
 }
 input {
   color: #8d8d8d;
-  font-family: Roboto;
-  font-size: 0.9rem;
+  font-family: Roboto serif;
+  font-size: 14px;
   font-style: normal;
 }
 .tel_text {
@@ -752,11 +809,21 @@ input text::placeholder {
 
 .contact__img img {
   width: 100%;
-  margin: 10% 0;
+  margin: 25% 0;
   position: absolute;
 }
-.phone {
-  margin: 0;
+.form_black__button {
+  width: 222px;
+  height: 71px;
+  background-color: #333;
+  color: #fff;
+  font-family: Roboto serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .contact__img {
@@ -782,27 +849,14 @@ input text::placeholder {
     white-space: nowrap;
     margin-left: 12px;
   }
-  .black__button {
-    border: none;
-    background-color: rgba(51, 51, 51, 1);
-    color: #fff;
-    /* padding: 10px, 20px;
-      cursor: pointer; */
-    /* margin: 10px; */
-  }
-
-  .button-container button {
-    color: rgba(51, 51, 51, 1);
-    text-decoration: none;
-    color: var(--Gray-1, #333);
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 2.4px;
+  section.contact {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
   }
 }
+
+/* the end of section5 Contact Us */
 
 /* SVETLANA */
 
@@ -839,7 +893,7 @@ footer {
 .contacts h3,
 .social-media h3 {
   color: #fff;
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -858,14 +912,13 @@ footer div ul li {
 
 footer div ul li a {
   color: #fff;
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
   text-decoration: none;
-  color: #fff;
 }
 
 .contacts p a {
@@ -893,14 +946,13 @@ footer div ul li a {
 
 .contacts p {
   color: #fff;
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.42px;
   text-decoration: none;
-  color: #fff;
 }
 
 /* последняя строка в footer */
@@ -1073,7 +1125,7 @@ body {
 
 .conteiner__tittle h1 {
   color: var(--Gray-4, #bdbdbd);
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: 300;
@@ -1082,7 +1134,7 @@ body {
 
 .conteiner__tittle span {
   color: var(--Gray-1, #333);
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
@@ -1100,7 +1152,7 @@ body {
 
 .conteiner p {
   color: #000;
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
@@ -1109,7 +1161,7 @@ body {
 
 .conteiner h2 {
   color: var(--Gray-4, #bdbdbd);
-  font-family: Roboto;
+  font-family: Roboto serif;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 300;
@@ -1121,7 +1173,7 @@ body {
   height: 15%;
 }
 
-.conteiner_first {
+.container_first {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -1132,31 +1184,31 @@ body {
   overflow: auto;
 }
 
-.conteiner_first img {
+.container_first img {
   grid-column: 1/2;
   grid-row: 1/4;
 }
 
-.conteiner_first h2 {
+.container_first h2 {
   grid-column: 2/4;
   grid-row: 1/2;
   margin-right: 6%;
   overflow: auto;
 }
 
-.conteiner_first p {
+.container_first p {
   grid-column: 2/4;
   grid-row: 2/3;
   margin-right: 5%;
 }
 
-.conteiner_first button {
+.container_first button {
   grid-column: 2;
   grid-row: 3/5;
 }
 
 @media screen and (max-width: 768px) {
-  .conteiner_first {
+  .container_first {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1164,7 +1216,7 @@ body {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1100px) {
-  .conteiner_first {
+  .container_first {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1172,7 +1224,7 @@ body {
 }
 
 @media screen and (min-width: 1800px) {
-  .conteiner_first p {
+  .container_first p {
     font-size: 2rem;
     font-style: normal;
     font-weight: 300;
@@ -1188,7 +1240,7 @@ body {
     width: 8%;
   }
 
-  .conteiner_first h2 {
+  .container_first h2 {
     font-size: 3rem;
   }
 }
@@ -1222,19 +1274,17 @@ body {
 /* Sveta- Contact-Information */
 /* карта  */
 .map {
-  display: flex;
-  justify-content: end;
-  margin-right: 50px;
+  top: 0; /* Прижимаем блок к верхней границе */
+  right: 0;
+}
+.section1_first-title {
+
 }
 /* company name */
 .section-adress {
   margin-left: 30px;
   padding-top: 50px;
 }
-/* .section-adress1{
-  margin-left: 30px;
-  padding-top: 50px;
- } */
 .phone {
   margin-left: 30px;
   padding-top: 50px;
@@ -1266,4 +1316,9 @@ body {
 .adress {
   margin-left: 30px;
   padding-top: 50px;
+}
+
+#contacts main {
+  display: grid;
+  grid-template-columns: 25% 75%;
 }
