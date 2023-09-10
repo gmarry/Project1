@@ -239,18 +239,14 @@ h2 {
   border: none;
   color: rgba(51, 51, 51, 1);
   background-color: #fff;
-  padding: 10px, 20px;
+
   cursor: pointer;
-  /* margin: 10px; */
 }
 
 .black__button {
   border: none;
   background-color: rgba(51, 51, 51, 1);
   color: #fff;
-  /* padding: 10px, 20px;
-  cursor: pointer; */
-  /* margin: 10px; */
 }
 .transparent__button {
   border: none;
@@ -292,7 +288,6 @@ h2 {
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   align-items: center;
-  grid-template: left;
 }
 
 .about__img-left__container {
@@ -360,7 +355,6 @@ h2 {
 
 .about__text-right {
   padding: 50px 100px;
-  grid-template: right;
 }
 
 /* end of section2 About */
