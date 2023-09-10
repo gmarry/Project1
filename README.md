@@ -32,7 +32,7 @@
 
 [![video](assets/Images/README/Cover.png)](assets/Images/README/Release_test.mp4) -->
 
-#### ССЫЛКА НА САЙТ на Git Pages (МЕСТО ДЛЯ ССЫЛКИ)
+#### ССЫЛКА НА САЙТ на [Git Pages](https://gmarry.github.io/Project1/)
 
 ====================================================
 
