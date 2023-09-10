@@ -239,8 +239,8 @@ h2 {
   border: none;
   color: rgba(51, 51, 51, 1);
   background-color: #fff;
-  /* padding: 10px, 20px;
-  cursor: pointer; */
+  padding: 10px, 20px;
+  cursor: pointer;
   /* margin: 10px; */
 }
 
@@ -1126,14 +1126,17 @@ body {
   margin-top: 0;
   padding: 0;
 }
+
 .conteiner {
   /* min-width: 1170px; */
   width: 100%;
 }
+
 .conteiner__tittle {
   margin-left: 9%;
   margin-right: 71%;
 }
+
 .conteiner__tittle h1 {
   color: var(--Gray-4, #bdbdbd);
   font-family: Roboto;
@@ -1142,6 +1145,7 @@ body {
   font-weight: 300;
   line-height: 4rem; /* 100% */
 }
+
 .conteiner__tittle span {
   color: var(--Gray-1, #333);
   font-family: Roboto;
@@ -1154,12 +1158,12 @@ body {
 .conteiner button {
   width: 38%;
   padding-left: 0;
-
   border: none;
   text-transform: uppercase;
   background-color: white;
   cursor: pointer;
 }
+
 .conteiner p {
   color: #000;
   font-family: Roboto;
@@ -1168,6 +1172,7 @@ body {
   font-weight: 300;
   line-height: 1.5rem; /* 156.25% */
 }
+
 .conteiner h2 {
   color: var(--Gray-4, #bdbdbd);
   font-family: Roboto;
@@ -1176,6 +1181,7 @@ body {
   font-weight: 300;
   line-height: normal;
 }
+
 .conteiner button {
   min-width: 15%;
   height: 15%;
@@ -1189,28 +1195,32 @@ body {
   margin-right: 9.3%;
   margin-left: 9.3%;
   margin-top: 2%;
-
   overflow: auto;
 }
+
 .conteiner_first img {
   grid-column: 1/2;
   grid-row: 1/4;
 }
+
 .conteiner_first h2 {
   grid-column: 2/4;
   grid-row: 1/2;
   margin-right: 6%;
   overflow: auto;
 }
+
 .conteiner_first p {
   grid-column: 2/4;
   grid-row: 2/3;
   margin-right: 5%;
 }
+
 .conteiner_first button {
   grid-column: 2;
   grid-row: 3/5;
 }
+
 @media screen and (max-width: 768px) {
   .conteiner_first {
     display: flex;
@@ -1218,6 +1228,7 @@ body {
     justify-content: space-between;
   }
 }
+
 @media screen and (min-width: 769px) and (max-width: 1100px) {
   .conteiner_first {
     display: flex;
@@ -1225,6 +1236,7 @@ body {
     justify-content: space-between;
   }
 }
+
 @media screen and (min-width: 1800px) {
   .conteiner_first p {
     font-size: 2rem;
@@ -1232,13 +1244,16 @@ body {
     font-weight: 300;
     line-height: 2.5rem; /* 156.25% */
   }
+
   .conteiner button {
     width: 48%;
     font-size: 2rem;
   }
+
   button img {
     width: 8%;
   }
+
   .conteiner_first h2 {
     font-size: 3rem;
   }
@@ -1268,6 +1283,7 @@ body {
     text-align: center;
   }
 }
+/* End Company Certifications */
 
 /* Sveta- Contact-Information */
 /* карта  */
